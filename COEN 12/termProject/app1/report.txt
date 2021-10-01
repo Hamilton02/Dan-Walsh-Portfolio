@@ -1,0 +1,6 @@
+Daniel Walsh
+
+Application 1
+
+
+I chose a hash table with a list for each age group consisting of student structs because we needed to search using the students age and return every student with that age. Breaking up the hash into each age group made searching by age much easier and allowed me to loop through the given age and return an array of students. It also helped there was 13 possible ages and 13 is a prime number. The other techniques would not work as well because arrays and basic hash tables would have to loop through every student to find all that satisy the age requirement. 

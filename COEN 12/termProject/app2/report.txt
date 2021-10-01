@@ -1,0 +1,5 @@
+Daniel Walsh
+
+Application 2
+
+I chose a hash table full of student structs due to searching based off of the iD. Because the max number of students was 3000, 3001 and made an obvious m to mod the iD by and allows for a fast program. With no max age gap to find, there is no reason to loop through the entire set unless completely full or close to it. A sorted array would work due to the O(log n) but the hash table was easier to implement and I remebered the hash table speed was much faster in earlier labs due to not clustering for very long. A list would not work because it whould have to be searched through sequentially, same as an unsorted array. 

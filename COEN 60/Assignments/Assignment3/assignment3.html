@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="assignment3.js"></script>
+		<link rel="stylesheet" href="assignment3.css" type="text/css">
+		<title>Rock, Paper, Scissors</title>
+	</head>
+	<body>
+
+		<script>
+
+		</script>
+		<h1 id="welcome"></h1>
+			<div class="gameTable">
+				<table>
+					<tr>
+						<th>Select One:</th>
+						<th></th>
+						<th>Computer</th>
+					</tr>
+					<tr>
+						<td>
+							<form id="userThrow">
+								<input type="radio" id="rock" value="0" name="userThrow">
+								<label for="rock">Rock</label><br>
+								<input type="radio" id="paper" value="1" name="userThrow">
+								<label for="paper">Paper</label><br>
+								<input type="radio" id="scissors" value="2" name="userThrow">
+								<label for="scissors">Scissors</label><br>
+							</form>
+						</td>
+						<th>
+							<form>
+								<input type="button" id="button" onClick="play()" value="GO">
+							</form>
+						</th>
+						<td>
+							<p id="computerThrow"></p>
+						</td>
+					</tr>
+					<tr>
+						<th>Results:</th>
+						<td colspan="2" id="result"></td>
+					</tr>
+
+
+				</table>
+				<p id="history"></p>
+			</div>
+
+			<div class="scoreboard">
+				<table>
+					<tr>
+						<th>Wins</th>
+						<th>Loses</th>
+						<th>Ties</th>
+					</tr>
+					<tr>
+						<td id="wins"></td>
+						<td id=loses></td>
+						<td id="ties"></td>
+					</tr>
+				</table>
+
+				<p>You have thrown Rock <span id="rocks"></span> Times</p>
+				<p>You have thrown Paper <span id="papers"></span> Times</p>
+				<p>You have thrown Scissors <span id="scis"></span> Times</p>
+
+			</div>
+		<div class="historyDiv">
+			<p id="history"></p>
+		</div>
+	</body>
+</html>

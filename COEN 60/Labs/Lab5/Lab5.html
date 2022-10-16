@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 5</title>
+		<script>
+
+			var squareArr = new Array;
+
+			function addSquare(){
+				var color = getRandColor();
+				var setX = Math.random() * 750;
+				var setY = Math.random() * 500;
+
+				const svgns = "http://www.w3.org/2000/svg";
+
+
+				const svg = document.querySelector("svg");
+				var square = document.createElementNS(svgns, "rect");
+
+
+				square.setAttribute("x", setX);
+				square.setAttribute("y", setY);
+				square.setAttribute("fill", color);
+
+				square.setAttribute("width", "40");
+				square.setAttribute("height", "40");
+				square.setAttribute("border", "2px solid black");
+
+				svg.appendChild(square);
+				squareArr.push(square);
+
+			}
+
+			function changeColors(){
+				const svg = document.querySelector("svg");
+
+				for(let i = 0; i < squareArr.length; i++){
+					newColor = getRandColor();
+					squareArr[i].setAttribute("fill", newColor);
+					svg.appendChild(squareArr[i]);
+				}
+			}
+
+			function deleteAll(){
+				for(let i = squareArr.length; i > 0; i--){
+					squareArr[i - 1].remove();
+					squareArr.pop();
+
+				}
+
+			}
+
+			function getRandColor(){
+				var hexadecimal = "0123456789abcdef";	
+				var colorStr ="";
+
+				for(var i=0;i<6;i++){
+					//random index 0~15 value
+					var random = 15 * Math.random();  //0.0001~15.99999
+
+					var index = Math.floor( random ); //0~15
+					colorStr+=hexadecimal[index];
+
+					
+				}
+				return "#" + colorStr;
+			}
+		</script>
+		
+	</head>
+	
+
+	<body>
+		<svg width="750" height="500"  id="flexBox" style="border:3px solid black">
+
+		</svg>
+		<form>
+			<input type="button" value="Add Square" onClick="addSquare()"></input>
+			<input type="button" value="Change Colors" onClick="changeColors()"></input>
+			<input type="button" value="Delete Squares" onClick="deleteAll()"></input>
+		</form>
+
+		<p id="test"></p>
+	</body>
+
+</html>

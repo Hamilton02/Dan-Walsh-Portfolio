@@ -1,0 +1,123 @@
+table, th, td {
+  border: 1px solid white;
+  Color: #0E7B3E;
+}
+
+td, th{
+	background-color: #FFFFFF;
+}
+
+td:hover{
+	background-color: #0E7B3E;
+	color: #FFFFFF;
+}
+
+#scuLogo{
+	width: 10%;
+	height: auto;
+	margin: auto;
+	float: right;
+}
+
+p, li{
+	Color: #0E7B3E;
+}
+
+.header{
+	background-color: #E8FBFB;
+	Color: #0E7B3E;
+	border-width: 5%;
+	border:  2px solid #0E7B3E;
+	margin-left: auto;
+	margin-right: auto;
+  margin-top: 10px;
+	width:  97.5%;
+	height: 150px;
+	padding:  5px;
+}
+
+.basic{
+	background-color: #E8FBFB;
+	Color: #0E7B3E;
+	border: 5px solid #2A3489;
+	margin-top: 10px;
+	margin-left: 400px;
+	margin-right: auto;
+	width:  55%;
+	padding:  5px;
+}
+
+.text{
+	Color: #0E7B3E;
+	border: 5px solid #0E7B3E;
+	margin-top: 10px;
+	margin-left:  400px;
+	margin-right: auto;
+	width:  55%;
+	padding:  5px;
+	clear: bottom;
+}
+
+#links{
+	float: left;
+	border: 5px solid #E8FBFB;
+	width: 350px;
+	height: 440px;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding:  5px;
+	background-image: url(Doge.jpeg);
+	background-repeat: no-repeat;
+	font-size: 25px;
+	color: #0E7B3E;
+}
+
+#gordie{
+	float: right;
+	width:  10%;
+	margin-right: 22px;
+}
+
+#goBoston{
+	float: right;
+	width: 10%;
+	margin-right: 22px;
+	border: 5px solid #04328C;
+	background-color: #c94255;
+	text-align: center;
+}
+
+a:link{
+	Color: #0E7B3E;
+	text-decoration-color: #E8FBFB;
+
+}
+
+a:visited{
+	Color:  #0E7B3E;
+	text-decoration-color: #E8FBFB;
+}
+
+a:hover{
+	Color: FFB81C;
+	text-decoration: none;
+}
+
+.
+
+#lassoRickRoll{
+	border: 30px solid black;
+	margin: auto;
+	width: 75%;
+}
+
+#bottom:hover{
+	background-color: #FFB81C;
+}
+
+.dogeLink:hover{
+	background-color: #FFB81C;
+}
+
+
+

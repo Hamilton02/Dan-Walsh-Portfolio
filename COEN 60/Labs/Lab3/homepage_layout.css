@@ -1,0 +1,217 @@
+table, th, td {
+  border: 1px solid white;
+  Color: #0E7B3E;
+}
+
+td, th{
+	background-color: #FFFFFF;
+}
+
+td:hover{
+	background-color: #0E7B3E;
+	color: #FFFFFF;
+}
+
+#scuLogo{
+	width: 10%;
+	height: auto;
+	margin: auto;
+	float: right;
+}
+
+p, li{
+	Color: #0E7B3E;
+	font-family:  ariel, sans-serif;
+}
+
+.header{
+	background-color: #E8FBFB;
+	Color: #0E7B3E;
+	border-width: 5%;
+	border:  2px solid #0E7B3E;
+	margin-left: auto;
+	margin-right: auto;
+  margin-top: 10px;
+	width:  97.5%;
+	height: 150px;
+	padding:  5px;
+	position: sticky;
+}
+
+.basic{
+	background-color: #E8FBFB;
+	Color: #0E7B3E;
+	border: 5px solid #2A3489;
+	margin-top: 10px;
+	margin-left: 10px;
+	width:  600px;
+	padding:  5px;
+	font-family:  ariel, sans-serif;
+	font-size: 18px;
+	float: left;
+}
+
+.text{
+	Color: #0E7B3E;
+	border: 5px solid #0E7B3E;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	width:  35%;
+	padding:  5px;
+	font-family:  ariel, sans-serif;
+	font-size: 18px;
+	float: left;
+}
+
+#aboutTitle{
+	text-align: center;
+
+}
+
+#links{
+	float: left;
+	border: 5px solid #E8FBFB;
+	width: 300px;
+	height: 400px;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding:  5px;
+	background-image: url(Doge.jpeg);
+	background-repeat: no-repeat;
+	font-size: 25px;
+	color: #0E7B3E;
+	font-family: ariel, sans-serif;
+}
+
+#linkHead{
+	text-align: center;
+}
+
+#gordie{
+	float: right;
+	width:  20%;
+	margin-top: 20px;
+	margin-right: 100px;
+	margin-left: 70px;
+}
+
+#goBoston{
+	float: right;
+	width: 350px;
+	height: auto;
+	margin-right: 60px;
+	margin-top: 10px;
+	border: 5px solid #04328C;
+	background-color: #c94255;
+	text-align: center;
+	margin-left: 10px;
+}
+
+#sox{
+	background-image: url(soxLogo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px;
+	height: 100px;
+	width:  100px;
+	margin-left: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	float: left;
+	border: 5px solid #0C2340;
+	background-position: center;
+	line-height: 55px;
+	font-family:  ariel, sans-serif;
+	font-size: 18px;
+}
+
+#bruins{
+	background-image: url(bruinsLogo.png);
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: 100px;
+	height: 100px;
+	width:  100px;
+	margin-right: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	float: right;
+	border: 5px solid #000000;
+	background-position: center;
+	line-height: 55px;
+	font-family:  ariel, sans-serif;
+	font-size: 18px;
+}
+
+#pats{
+	background-image: url(patsLogo.jpeg);
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: 100px;
+	height: 100px;
+	width:  100px;
+	margin-left: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	float: left;
+	border: 5px solid #C60C30;
+	background-position: center;
+	line-height: 55px;
+	font-family:  ariel, sans-serif;
+	font-size: 18px;
+}
+
+#celts{
+	background-image: url(celtsLogo.jpeg);
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: 100px;
+	height: 100px;
+	width:  100px;
+	margin-right: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	float: right;
+	border: 5px solid #007A33;
+	background-position: center;
+	line-height: 55px;
+	font-family:  ariel, sans-serif;
+	font-size: 18px;
+}
+
+
+
+
+a:link{
+	Color: #FFFFFF;
+	text-decoration-color: #E8FBFB;
+
+}
+
+a:visited{
+	Color:  #FFFFFF;
+	text-decoration-color: #E8FBFB;
+}
+
+a:hover{
+	Color: FFB81C;
+	text-decoration: none;
+}
+
+
+#lassoRickRoll{
+	border: 30px solid black;
+	margin: auto;
+	width: 75%;
+}
+
+#bottom:hover{
+	background-color: #FFB81C;
+}
+
+.dogeLink:hover{
+	background-color: #FFB81C;
+}
+
+
+

@@ -1,0 +1,72 @@
+
+h1{
+	Color: #BD3039;
+	background-color: #0C2340;
+}
+
+table, th, td {
+  border: 1px solid white;
+  Color: #BD3039;
+}
+
+td, th{
+	background-color: #FFFFFF;
+}
+
+td:hover{
+	background-color: #0C2340;
+	color: #B0B7BC;
+}
+
+img{
+	width: 10%;
+	height: auto;
+	margin: auto;
+}
+
+p, li{
+	Color: #BD3039;
+}
+
+.basic{
+	background-color: #0C2340;
+	Color: #BD3039;
+	border-width: 5%;
+	border-style: solid;
+	margin: auto;
+	width:  70%;
+	padding:  10px;
+}
+
+.text{
+	Color:  #0C2340;
+	border-width: 5%;
+	border-style: dashed;
+	margin: auto;
+	width:  70%;
+	padding:  10px;
+}
+
+a:link{
+	Color: #BD3039;
+	text-decoration-color: #0C2340;
+
+}
+
+a:visited{
+	Color:  #0C2340;
+	text-decoration-color: #BD3039;
+}
+
+a:hover{
+	Color: #B0B7BC;
+	text-decoration: none;
+}
+
+*{
+	font-family: georgia;
+}
+
+
+
+

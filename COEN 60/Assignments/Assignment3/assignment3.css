@@ -1,0 +1,85 @@
+#welcome{
+	background: #33006F;
+	color:  #C4CED4;
+	border:  5px solid black;
+	text-size: 50;
+}
+
+table{
+	border: 4px solid #33006F;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	background:  black;
+	padding: 10px;
+
+}
+
+td{
+	border: 2px solid white;
+	background: #33006F;
+	Color: #C4CED4;
+	padding: 10px;
+	font-family:  ariel, sans-serif;
+	
+}
+
+th{
+	Color: #C4CED4;
+	padding: 10px;
+	font-family:  ariel, sans-serif;
+}
+
+
+.scoreboard{
+	float: right;
+	font-size: 40px;
+	margin-right: 100px;
+	width: 40%;
+	background: #C4CED4;
+	padding:  10px;
+	font-family:  ariel, sans-serif;
+	text-align: center;
+}
+
+
+.gameTable{
+	float:  left;
+	font-size: 50px;
+	margin-left: 100px;
+	margin: 10px;
+	width: 45%;
+	background: #C4CED4;
+	padding: 10px;
+	font-family:  ariel, sans-serif;
+
+}
+
+.historyDiv{
+	font-size: 10px;
+	font-family:  ariel, sans-serif;
+	background:  black;
+	
+}
+
+#history{
+	font-size: 30px;
+}
+
+#button{
+	font-size: 30px;
+	align-content: center;
+	background: #33006F;
+	border: 2px solid #C4CED4;
+	color: #C4CED4;
+	font-family:  ariel, sans-serif;
+}
+
+#result{
+	text-align: center;
+	color:  Black;
+}
+
+#computerThrow{
+	text-align: center;
+}

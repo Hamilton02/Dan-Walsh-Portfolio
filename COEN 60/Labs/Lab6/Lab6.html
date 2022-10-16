@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Validation</title>
+		<script type="text/javascript">
+			function valid1(){
+				var nameStr = document.getElementById('nameBox').value;
+				var emailStr = document.getElementById('emailBox').value;
+				var phoneStr = document.getElementById('phoneBox').value;
+				if(nameStr.length == 0|| emailStr.length == 0 || emailStr.indexOf('@') == -1 || emailStr.indexOf('$') > -1){
+					window.alert("Invalid Form");
+				}else{
+					window.alert("Valid Information");
+				}
+			}
+
+			function teamCheck(){
+				var patsBox = document.getElementById('pats').checked;
+				var bruinsBox = document.getElementById('bruins').checked;
+				var soxBox = document.getElementById('sox').checked;
+				var celtsBox = document.getElementById('celts').checked;
+				var whiteSoxBox = document.getElementById('incorrect').checked;
+				if(patsBox && bruinsBox && celtsBox && soxBox && !whiteSoxBox){
+					window.alert("Correct!");
+				}else{
+					window.alert("Incorrect");
+				}
+				
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<p>Name*:</p>
+			<input type="text" id="nameBox">
+			<p>Email*:</p>
+			<input type="email" id="emailBox">
+			<p>Phone Number:</p>
+			<input type="text" id="phoneBox">
+
+			<input type="button" value="Submit" onClick="valid1()">
+
+		</form>
+
+		<form>
+			<p>Which of these teams are not in New England</p>
+			<input type="checkbox"  id="pats">
+			<label for="pats">Patriots</label></br>
+			<input type="checkbox"  id="bruins">
+			<label for="bruins">Bruins</label></br>
+			<input type="checkbox"  id="sox">
+			<label for="sox">Red Sox</label></br>
+			<input type="checkbox"  id="incorrect">
+			<label for="incorrect">White Sox</label></br>
+			<input type="checkbox"  id="celts">
+			<label for="celts">Celtics</label></br>
+			<input type="button" value="Check your answers" onClick="teamCheck()">
+	</body>
+</html>

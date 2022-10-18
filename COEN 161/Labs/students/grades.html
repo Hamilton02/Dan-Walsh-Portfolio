@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Grades | Camini</title>
+
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/grades.css">
+  </head>
+  <body>
+    <nav>
+      <!-- LOGO -->
+      <h1>Camini</h1>
+
+      <!-- HOME -->
+      <li>
+        <a href="./index.html">
+          <div class="svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+              />
+            </svg>
+          </div>
+          <span> Home </span>
+        </a>
+      </li>
+      <!-- Grades -->
+      <li>
+        <a href="./grades.html">
+          <div class="svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+              />
+            </svg>
+          </div>
+          <span> Grades </span>
+        </a>
+      </li>
+
+      <!-- Calendar -->
+      <li>
+        <a href="./calendar.html">
+          <div class="svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+              />
+            </svg>
+          </div>
+          <span> Calendar </span>
+        </a>
+      </li>
+    </nav>
+    <main>
+      <h1>Grades</h1>
+      <section class="wrapper">
+        <table class="grades">
+          <thead>
+            <tr>
+              <th>
+                <!-- required for the search input to have a pseudo element-->
+                <div class="search-wrapper">
+                  <input type="search" placeholder="Assignment" />
+                  <img src="assets/search.svg" />
+                </div>
+              </th>
+              <th aria-haspopup="true">
+                <button aria-label="Filter by Assignment Category">
+                  Category
+                </button>
+                <ul
+                  id="category-filter-menu"
+                  class="hidden filter-menu"
+                  role="menu"
+                ></ul>
+              </th>
+              <th aria-haspopup="true">
+                <button aria-label="Filter by Week due">Date Due</button>
+                <ul
+                  id="week-filter-menu"
+                  class="hidden filter-menu"
+                  role="menu"
+                ></ul>
+              </th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>History and HTML</td>
+              <td>quiz</td>
+              <td>10/30/2022</td>
+              <td>86</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>quiz</td>
+              <td>11/5/2022</td>
+              <td>37</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>quiz</td>
+              <td>9/20/2022</td>
+              <td>86</td>
+            </tr>
+            <tr>
+              <td>HTTP</td>
+              <td>quiz</td>
+              <td>10/23/2022</td>
+              <td>91</td>
+            </tr>
+            <tr>
+              <td>Servers</td>
+              <td>quiz</td>
+              <td>12/7/2022</td>
+              <td>46</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>lab</td>
+              <td>9/27/2022</td>
+              <td>76</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>lab</td>
+              <td>12/7/2022</td>
+              <td>55</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>lab</td>
+              <td>10/29/2022</td>
+              <td>78</td>
+            </tr>
+            <tr>
+              <td>Servers</td>
+              <td>lab</td>
+              <td>10/13/2022</td>
+              <td>93</td>
+            </tr>
+            <tr>
+              <td>Forms</td>
+              <td>lab</td>
+              <td>9/20/2022</td>
+              <td>95</td>
+            </tr>
+            <tr>
+              <td>HTML 1</td>
+              <td>practice</td>
+              <td>9/21/2022</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>HTML 2</td>
+              <td>practice</td>
+              <td>12/7/2022</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>CSS 1</td>
+              <td>practice</td>
+              <td>9/21/2022</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>CSS 2</td>
+              <td>practice</td>
+              <td>12/7/2022</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>JS 1</td>
+              <td>practice</td>
+              <td>11/3/2022</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>JS 2</td>
+              <td>practice</td>
+              <td>9/24/2022</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>JS 3</td>
+              <td>practice</td>
+              <td>9/28/2022</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>JS 4</td>
+              <td>practice</td>
+              <td>11/26/2022</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>DB 1</td>
+              <td>practice</td>
+              <td>12/7/2022</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>DB 2</td>
+              <td>practice</td>
+              <td>9/19/2022</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Node.js 1</td>
+              <td>practice</td>
+              <td>10/13/2022</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Node.js 2</td>
+              <td>practice</td>
+              <td>10/26/2022</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>theory</td>
+              <td>12/7/2022</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>theory</td>
+              <td>10/10/2022</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>theory</td>
+              <td>11/10/2022</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>D</td>
+              <td>theory</td>
+              <td>11/21/2022</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>E</td>
+              <td>theory</td>
+              <td>12/7/2022</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>theory</td>
+              <td>10/7/2022</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>G</td>
+              <td>theory</td>
+              <td>9/27/2022</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>H</td>
+              <td>theory</td>
+              <td>12/7/2022</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>I</td>
+              <td>theory</td>
+              <td>12/7/2022</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>J</td>
+              <td>theory</td>
+              <td>11/5/2022</td>
+              <td>50</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

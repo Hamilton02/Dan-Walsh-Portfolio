@@ -1,0 +1,12 @@
+body{
+    max-width: 100ch;
+    font-size: 16px;
+    margin: auto;
+    padding: 0rem 2rem;
+    border-left: 1px solid black;
+    border-top: 20px solid purple;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #5f27cd;
+}

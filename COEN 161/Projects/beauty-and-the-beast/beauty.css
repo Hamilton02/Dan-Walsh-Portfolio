@@ -1,0 +1,10 @@
+#hockey{
+    filter: url(https://images.unsplash.com/photo-1607863400985-8d3bc50e3fd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1375&q=80);
+    filter: grayscale(100%);
+
+
+}
+
+#hockey:hover{
+    filter: url(https://images.unsplash.com/photo-1607863400985-8d3bc50e3fd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1375&q=80);
+}

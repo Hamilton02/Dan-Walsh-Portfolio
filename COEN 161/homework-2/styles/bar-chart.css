@@ -1,0 +1,93 @@
+.home{
+    border-radius: 8px;
+    background-color: cyan;
+    text-align: center;
+    padding: .5rem 1rem .5rem 1rem;
+    width: 10%;
+}
+.flex-container{
+    width: 45%;
+    display: flex;
+    border-radius: 8px;
+    border: 3px solid black;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: flex-end;
+    margin: .5rem;
+    margin-bottom: 2%;
+}
+
+
+.flex-container > div{
+    background-color: aqua;
+    width: 10%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.flex-bar-1{
+    height: 20%;
+}
+
+.flex-bar-2{
+    height: 40%;
+}
+
+.flex-bar-3{
+    height: 60%;
+}
+
+.flex-bar-4{
+    height: 50%;
+}
+
+.flex-bar-5{
+    height: 55%;
+}
+
+.position-container{
+    border-radius: 8px;
+    border: 3px solid black;
+    width: 45%;
+    height: 400px;
+    margin: .5rem;
+}
+
+.position-container > div{
+    position: relative;
+    background-color: aquamarine;
+    float: left;
+    width: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    border-radius: 4px;
+    
+}
+
+.position-bar-1{
+    height: 20%;
+    top: 80%
+}
+
+.position-bar-2{
+    height: 40%;
+    top: 60%;
+}
+
+.position-bar-3{
+    height: 60%;
+    top: 40%;
+}
+
+.position-bar-4{
+    height: 50%;
+    top: 50%;
+}
+
+.position-bar-5{
+    height: 55%;
+    top: 45%;
+}
+
+

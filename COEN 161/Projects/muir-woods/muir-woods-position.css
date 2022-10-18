@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  background-color: black;
+  font-family: "Josefin Sans", Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+}
+
+h1,
+h2 {
+  font-size: 6rem;
+  font-family: "Yeseva One", Georgia, "Times New Roman", Times, serif;
+}
+
+p,
+ul,
+figcaption {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+p,
+li {
+  margin-bottom: 1.2rem;
+}
+
+a {
+  color: #a36b51;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.container:nth-child(odd) {
+  background: white;
+  color: black;
+}
+.container:nth-child(even) {
+  background: black;
+  color: white;
+}
+
+#hero {
+  background-size: cover;
+  background-image: url("./assets/morning-forest-wide.jpg");
+  text-align: center;
+}
+
+#hero .wrapper {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  top: 40%;
+}
+
+#hero h1 {
+  margin: 0;
+}
+
+#hero p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#overview .wrapper {
+  position: relative;
+  top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#overview .wrapper > * {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+/* what happens when you add these rules to the next
+   block? does anything change? how do you choose
+   what selectors to put rules under? */
+#overview h2 {
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+#overview .wrapper > :nth-child(1) {
+  margin-right: 5%;
+}
+
+#overview .wrapper > :nth-child(2) {
+  margin-left: 5%;
+  width: 50%;
+}
+
+#trail img {
+  width: 100%;
+  height: 30rem;
+}
+
+#trail .wrapper {
+  position: relative;
+  top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#trail .wrapper > * {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+#trail .wrapper > :nth-child(2) {
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+#path {
+  background: url("./assets/trees-wide.jpg");
+  background-size: cover;
+}
+
+#hiking > * {
+  height: 80%;
+  padding: 5% 10%;
+  width: 60%;
+  margin: auto;
+}
+
+#hiking div:first-child figure {
+  height: 100%;
+  width: 49%;
+  display: inline-block;
+  margin: 0;
+}
+
+#hiking .img-wrapper.tall,
+#hiking .img-wrapper.tall img {
+  height: 100%;
+  width: auto;
+}
+
+#hiking .img-wrapper.tall:first-child {
+  margin-right: 1em;
+}
+
+#hiking figure {
+  position: relative;
+}
+
+#hiking figcaption {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+#hiking figure:hover figcaption {
+  visibility: visible;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Programming Language as Old as Time.</title>
+    <meta name="author" content="Arman Elahi" />
+    <meta
+      name="description"
+      content="A short blurb on where you can see C's influence today."
+    />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>The C Language</h1>
+    <p>
+      C is one of the closest you can get to a machine's hardware without
+      writing assembly code. It gives you basic programming constructs like
+      conditionals and branches while not managing any memory for you.
+    </p>
+    <p>
+      C is barebones and easy to make mistakes with. But if you can safely write
+      C, you can safely write any language. Most mainstream languages borrow at
+      least one of the following things from C:
+    </p>
+
+    <ul>
+      <li>The syntax</li>
+      <li>The philosophy</li>
+      <li>The internals</li>
+    </ul>
+
+    <h2>The Philosophy</h2>
+    <p>
+      The UNIX philosophy as stated in
+      <a
+        href="http://www.catb.org/~esr/writings/taoup/html/ch01s06.html"
+        target="_blank"
+        ><cite>The Basics of Unix Philosophy </cite></a
+      >
+      is
+    </p>
+    <blockquote>
+      Write programs that do one thing and do it well. Write programs to work
+      together. Write programs to handle text streams, because that is a
+      universal interface.
+    </blockquote>
+
+    <p>
+      C Programs are meant to do exactly one thing well. It completes a single
+      task to its fullest extent. When you write programs in lab for other
+      classes, they always take in text and spit out text because any program is
+      able to understand text.
+    </p>
+
+    <h2>The Internals</h2>
+    <p>
+      Some higher level languages (up until the advent of Golang and Rust)
+      compiled down to C. Both Python and JavaScript had interfaces to connect
+      code in those languages to C. Python is even built on top of C, although
+      technically it can be built on top of any language.
+    </p>
+
+    <h2>The Syntax</h2>
+    <p>
+      The curly brace syntax is a staple of most programming languages. There
+      are other branches, like the LISP based languages and Python which eschews
+      the clutter of punctuation for the density of whitespace. But many
+      languages still take the basic building blocks of C's style.
+    </p>
+
+    <figure>
+      <pre><code>for (int i = 0; i < 10; i++) {
+    printf("%d", i)
+}</code></pre>
+      <figcaption>-- A for loop written in C</figcaption>
+    </figure>
+
+    <figure>
+      <pre><code> for (let i = 0; i < 10; i++) {
+    console.log(i)
+}</code></pre>
+      <figcaption>-- A for loop written in JavaScript</figcaption>
+    </figure>
+
+    <p>
+      Even if the system call changes, the structure of the code still remains
+      the same.
+    </p>
+  </body>
+</html>

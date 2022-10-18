@@ -1,0 +1,291 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #f2f2f2;
+}
+
+header{
+    position: relative;
+}
+
+.column{
+    display: flex;
+    flex-flow: row;
+    height: auto;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.column > .out-now{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    order: 1;
+    border: 1.5px solid rgb(62, 61, 61);
+    padding: 6px;
+    color: rgb(93, 93, 93);
+    text-decoration: none;
+}
+
+.column > .out-now:hover{
+    color: black;
+    border: 1.5px solid black;
+}
+
+.column > a > .IssueTitle > .t-Caps{
+    order: 1;
+    border-right: 1.5px solid rgb(62, 61, 61);
+    display: inline;
+}
+
+.column > a > .IssueTitle > .t-Caps:hover{
+    border-right: 1.5px solid black;
+}
+
+.column > a > .IssueTitle > h3{
+    order: 2;
+    display: inline;
+    padding: 4px;
+    height: 32px;
+    
+}
+
+.column > .logo{
+    align-self: flex-end;
+    order: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    z-index: 1;
+    top: 35%;
+}
+
+.column > .nav{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    order: 3;
+}
+
+.column > .nav > li{
+    padding: 1rem;
+    list-style: none;
+    text-decoration:none;
+}
+
+.column > .nav > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.column > .nav > li > a:hover{
+    border-bottom: 1px solid black;
+}
+
+header > div> .u-Art{
+    width: 100vw;
+    max-height: 72vh;
+    overflow: hidden;
+}
+
+header > .column > div{
+    display: flex;
+    flex-flow: row;
+    border-top: 5px solid #5ebe92;
+    border-bottom: 5px solid #5ebe92;
+    position: relative;
+    bottom: .5rem;
+    justify-content: space-between;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    width: 90vw;
+    align-self: center;
+}
+
+header > .column > div.u-Grid > .main{
+    flex-grow: 3;
+    width: 67%;
+}
+
+
+header > .column > div > .main > h4 > a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+}
+
+header > .column > div > .main > h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header > .column > div > .main > div.t-BodySans{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+header > .column > div.u-Grid > a.issue{
+    text-decoration: none;
+    flex-grow: 1;
+    width: 33vw;
+    justify-content: space-between;
+    align-self: end;
+    justify-self: end;
+}
+
+header > .column > div.u-Grid > a.issue > div.IssueTitle.small{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+.t-Caps.tiny.part-of{
+    text-decoration: none;
+    color: #5ebe92;
+}
+
+.IssueTitle.small{
+    border: 1.5px solid #5ebe92;
+}
+
+.IssueTitle.small:hover{
+    border-color: black;
+}
+
+.t-Caps.meta{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.t-Caps.meta > span{
+    padding: 1rem;
+    text-decoration: none;
+    text-align: left;
+    border-right: 1px solid #5eb392;
+    width: 30%;
+}
+
+.t-Caps.meta > span:first-child{
+    order: 1;
+    border-bottom: 1px solid #5eb392;
+}
+
+.t-Caps.meta > span:last-child{
+    order: 2;
+}
+
+h2.t-IssueTitle.title{
+    align-self: center;
+    width: 100%;
+    flex-grow: 5;
+    text-align: left;
+    justify-self: flex-start;
+}
+
+article.ContentBody.column{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+article.ContentBody.column > div.ArticleLayout{
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    flex-grow: 3;
+    order: 1;
+    border-bottom: 5px solid #5ebe92;
+}
+
+article.ContentBody.column > div.ArticleLayout > p{
+    display: block;
+    flex-grow: 3;
+    width: 66%;
+    align-self: start;
+    font-size: 1.3rem;
+}
+
+article.ContentBody.column > div.ArticleLayout:first-child > p:nth-child(n+3){
+    bottom: 11rem;
+    position: relative;
+}
+
+article.ContentBody.column > div.ArticleLayout > div.Sidebar.large{
+    flex-grow: 1;
+    align-self: end;
+    width: 25%;
+    justify-self: center;
+    border-top: 5px solid #5eb392;
+    border-bottom: 5px solid #5eb392;
+    color: #5ebe92;
+    font-size: 1.5rem;
+
+}
+
+article.ContentBody.column > div.ArticleLayout:first-child > div.Sidebar.large > blockquote{
+    width: 100%;
+    right: 2rem;
+    position: relative;
+}
+
+article.ContentBody.column > div.ArticleLayout.flipped{
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    flex-grow: 3;
+    order: 1;
+    border-bottom: 5px solid #5ebe92;
+    align-self: end;
+    position: relative;
+    margin-top: 5rem;
+}
+
+article.ContentBody.column > div.ArticleLayout.flipped > p{
+    display: block;
+    flex-grow: 3;
+    width: 66%;
+    align-self: start;
+    font-size: 1.3rem;
+    position: relative;
+    left: 25rem;
+    bottom: 40rem;
+}
+
+article.ContentBody.column > div.ArticleLayout.flipped > div.Small.Sidebar.CrossReference{
+    flex-grow: 1;
+    align-self: start;
+    width: 20%;
+    justify-self: center;
+    color: #5ebe92;
+    font-size: 1.5rem;
+
+}
+
+
+article.ContentBody.column > div.ArticleLayout:nth-child(2){
+    position: relative;
+    bottom: 11rem;
+}
+
+article.ContentBody.column > div.ArticleLayout:nth-child(3){
+    position: relative;
+    bottom: 51rem;
+}
+

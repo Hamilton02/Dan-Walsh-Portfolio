@@ -1,0 +1,36 @@
+.last{
+    background: green;
+    width: 70vw;
+    left: 30%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute
+}
+
+.middle{
+    position: absolute;
+    z-index: 0;
+    left: 10%;
+    top: 15%;
+}
+
+.first{
+    background: white;
+    padding: 2rem;
+    margin: 1rem;
+    z-index: 3;
+    width: 40%;
+    right: 3%;
+    top: 35vh;
+    height: 20%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+#lettuce{
+    width: auto;
+    height: 70vh;
+}

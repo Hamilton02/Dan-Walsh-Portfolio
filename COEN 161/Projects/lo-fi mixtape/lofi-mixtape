@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Lo-fi Mixtape</title>
+</head>
+<body>
+    <h1>My Lo-fi Mixtape</h1>
+    <figure>
+        <img height="300" width="300" src="cover.jpg" alt="japanese resturant on a pitch black background">
+    </figure>
+    
+    <p>Collection of Jazzy beats for that good youtube money</p>
+    <cite>Photo by <a>Jazz Jeff</a> on <a>Unsplash</a></cite>
+    <ol>
+        <li>Jazzy Beat by <a>Canva Media</a></li>
+        <audio src="1-jazzy-beat.mp3"/>
+    </ol>
+</body>
+
+</html>

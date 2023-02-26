@@ -1,0 +1,104 @@
+table{
+    display: flex;
+    flex-flow: column;
+    height: 85%;
+    width: auto;
+    margin: var(--margin-md);
+    padding: var(--padding-md);
+    border-radius: var(--border-radius-md);
+    background-color: var(--accent-color);
+    overflow-y: scroll;
+}
+
+thead{
+    border-bottom: 2px solid #eee;
+    margin: var(--margin-sm);
+    color: #eee;
+}
+
+tbody{
+    overflow: scroll;
+    flex-grow: 1;
+    color: white;
+}
+
+tr{
+    display: flex;
+}
+
+th{
+    position: relative;
+}
+
+tr > td:first-child{
+    flex-basis: 40%;
+    justify-content: center;
+}
+
+tr > td:nth-child(1n+2){
+    flex-basis: 20%;
+    justify-content: center;
+
+}
+
+tr > th:first-child{
+    flex-basis: 40%;
+    justify-content: center;
+
+}
+
+tr > th:nth-child(1n+2){
+    flex-basis: 20%;
+    justify-content: center;
+}
+
+td, th{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+div.search-wrapper{
+    position: relative;
+
+}
+
+.search-wrapper > img{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    align-items: center;
+    padding: var(--padding-sm);
+}
+
+.search-wrapper > input{
+    border: 0;
+    background: #eee;
+    border-radius: var(--border-radius-md);
+    padding: var(--padding-sm) var(--padding-sm) var(--padding-sm) var(--padding-md);
+    font-weight: inherit;
+    font-size: inherit;
+    color:#fff;
+}
+
+.search-wrapper > input:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+button{
+    background: #eee;
+    border-radius: var(--border-radius-md);
+    padding: var(--padding-sm) var(--padding-sm) var(--padding-sm) var(--padding-md);
+    font-weight: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--accent-color);
+    color: #eee;
+}
+
